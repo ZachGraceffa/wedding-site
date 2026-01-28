@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zach and Ronnie's Wedding - September 19th, 2026">
+    <title>Zach and Ronnie's Wedding</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+              'baskerville': ['Libre Baskerville', 'Georgia', 'serif'],
+              'mono': ['Cutive Mono', 'monospace'],
+            },
+            colors: {
+              'cream': '#e8e3d8',
+              'brown': '#3d3531',
+              'red': '#c74545',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-cormorant leading-relaxed text-brown bg-cream">
+    <main>
+        <section class="min-h-screen flex flex-col relative">
+            <div class="p-6 pt-6 pb-0 text-center md:p-12 md:pt-12 md:pb-4 lg:px-16 lg:pt-8 lg:pb-0">
+                <h1 class="text-4xl md:text-[3.5rem] lg:text-[4.5rem] font-bold italic text-brown mb-0 tracking-wider font-baskerville">
+                    <span class="name-container grid grid-cols-2 gap-16 relative min-h-[3em] w-full max-w-[480px] md:max-w-[700px] mx-auto">
+                        <span class="name name-1 flex items-center justify-center transition-all duration-[800ms] ease-in-out relative z-10 min-w-0" id="name1">Zach</span>
+                        <span class="ampersand text-red text-[3em] inline-block absolute left-[45%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-[5]">&</span>
+                        <span class="name name-2 flex items-center justify-center transition-all duration-[800ms] ease-in-out relative z-10 min-w-0" id="name2">Ronnie</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle text-2xl md:text-[2rem] lg:text-[2.5rem] text-brown font-light mb-8 -mt-2 tracking-wider font-baskerville italic relative inline-block">ARE GETTING MARRIED!</p>
+            </div>
+            <div class="w-screen h-[60vh] md:h-[65vh] lg:h-[75vh] min-h-[400px] md:min-h-[450px] lg:min-h-[550px] overflow-hidden relative ml-[calc(-50vw+50%)]">
+                <img class="w-full h-full object-cover object-center block"
+                  src="images/collage-1024.webp"
+                  srcset="
+                    images/collage-320.webp 320w,
+                    images/collage-480.webp 480w,
+                    images/collage-640.webp 640w,
+                    images/collage-768.webp 768w,
+                    images/collage-1024.webp 1024w,
+                    images/collage-1280.webp 1280w,
+                    images/collage-1536.webp 1536w,
+                    images/collage-1920.webp 1920w
+                  "
+                  sizes="100vw"
+                  alt="Zach & Ronnie"
+                  loading="eager"
+                />
+            </div>
+            <div class="w-4/5 md:w-2/3 lg:w-1/2 max-w-full mx-auto my-4 px-6 py-8">
+                <p class="font-mono text-base md:text-2xl lg:text-[40px] text-brown leading-normal mb-8 text-center">we humbly request the pleasure of your company as we celebrate our marriage on Saturday, September 19th, 2026.</p>
+                <p class="font-mono text-base md:text-2xl lg:text-[40px] text-brown text-center">details coming soon.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
