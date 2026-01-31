@@ -1,12 +1,12 @@
 /* Animation classes for name floating effect */
 .name-1 {
-    animation: float1 4s ease-in-out infinite;
-    transform-origin: center;
+    /* animation: float1 4s ease-in-out infinite; */
+    /* transform-origin: center; */
 }
 
 .name-2 {
-    animation: float2 4s ease-in-out infinite;
-    transform-origin: center;
+    /* animation: float2 4s ease-in-out infinite; */
+    /* transform-origin: center; */
 }
 
 /* Floating animations */
