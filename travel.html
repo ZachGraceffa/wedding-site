@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel — Zach and Ronnie's Wedding">
+    <title>Travel — Zach & Ronnie</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+              'baskerville': ['Libre Baskerville', 'Georgia', 'serif'],
+              'mono': ['Cutive Mono', 'monospace'],
+            },
+            colors: {
+              'cream': '#e8e3d8',
+              'brown': '#3d3531',
+              'red': '#c74545',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-cream text-brown">
+
+    <header class="text-center px-6 pt-10 pb-0 md:pt-16">
+        <a href="index.html" class="hover:opacity-75 transition-opacity inline-block">
+            <h1 class="font-baskerville font-bold italic leading-[0.95] tracking-wide text-[8vw] md:text-[2.75rem]">
+                <span class="block">ZACH &amp; RONNIE</span>
+                <span class="block">ARE GETTING MARRIED!</span>
+            </h1>
+        </a>
+        <nav class="flex justify-center gap-8 md:gap-14 mt-6 md:mt-8 font-mono text-[10px] uppercase tracking-widest">
+            <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
+            <a href="travel.html" class="underline underline-offset-4">Travel</a>
+            <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+            <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
+        </nav>
+    </header>
+
+    <main class="max-w-[560px] mx-auto px-6 text-center font-mono pb-20">
+
+        <!-- Divider -->
+        <div class="flex items-center justify-center gap-3 my-10">
+            <div class="h-px w-14 bg-brown/40"></div>
+            <span class="text-red text-[10px]">•♥•</span>
+            <div class="h-px w-14 bg-brown/40"></div>
+        </div>
+
+        <!-- Hotel -->
+        <section>
+            <h2 class="font-mono text-xs uppercase tracking-[0.2em] mb-5">We have a discounted rate at:</h2>
+            <p class="text-xs leading-relaxed">
+                Holiday Inn Chicago O'Hare - Rosemont<br>
+                6600 Mannheim Rd Building 2<br>
+                Rosemont, IL 60018
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                It's about a 25-minute drive to the venue via I-90 (depending on traffic).
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                Use the link below to book (your discount is automatically applied). You can choose whatever room type and dates work best for you. Availability may vary, so booking early is a good idea!
+            </p>
+            <a href="#" class="inline-block mt-6 font-mono text-[10px] uppercase tracking-[0.2em] underline underline-offset-4 hover:opacity-50 transition-opacity">
+                Book a Room
+            </a>
+        </section>
+
+        <!-- Divider -->
+        <div class="flex items-center justify-center gap-3 my-10">
+            <div class="h-px w-14 bg-brown/40"></div>
+            <span class="text-red text-[10px]">•♥•</span>
+            <div class="h-px w-14 bg-brown/40"></div>
+        </div>
+
+        <!-- Airbnb -->
+        <section>
+            <h2 class="font-mono text-xs uppercase tracking-[0.2em] mb-5">Prefer an Airbnb?</h2>
+            <p class="text-xs leading-relaxed">
+                Chief O'Neill's is located in Chicago's Avondale neighborhood, which is a great place to stay. We also recommend Logan Square, Bucktown and North Center.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

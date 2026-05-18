@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zach and Ronnie's Wedding — September 19th, 2026 · Chicago, IL">
+    <title>Zach & Ronnie — September 19th, 2026</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+              'baskerville': ['Libre Baskerville', 'Georgia', 'serif'],
+              'mono': ['Cutive Mono', 'monospace'],
+            },
+            colors: {
+              'cream': '#e8e3d8',
+              'brown': '#3d3531',
+              'red': '#c74545',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-cream text-brown">
+    <main>
+        <!-- Mobile/tablet nav — hidden at xl (1280px+) where side nav takes over -->
+        <nav class="xl:hidden flex justify-center gap-8 px-6 pt-6 pb-2 font-mono text-[10px] uppercase tracking-widest">
+            <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
+            <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
+            <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+            <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
+        </nav>
+
+        <!-- Header: single column on mobile/tablet, 3-column at xl+ -->
+        <div class="grid grid-cols-1 xl:grid-cols-[130px_1fr_130px] items-start px-6 pt-4 pb-0 xl:px-16 xl:pt-12">
+
+            <!-- Left nav (xl+ only) -->
+            <nav class="hidden xl:flex flex-col gap-4 pt-6 font-mono text-[10px] uppercase tracking-widest">
+                <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
+                <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
+            </nav>
+
+            <!-- Title — each line forced to its own block for reliable wrapping control -->
+            <div class="text-center">
+                <h1 class="font-baskerville font-bold italic text-brown leading-[0.9] tracking-wide text-[9vw] xl:text-[7.5vw]">
+                    <span class="block">ZACH &amp; RONNIE</span>
+                    <span class="block">ARE GETTING</span>
+                    <span class="block">MARRIED!</span>
+                </h1>
+            </div>
+
+            <!-- Right nav (xl+ only) -->
+            <nav class="hidden xl:flex flex-col gap-4 pt-6 font-mono text-[10px] uppercase tracking-widest text-right">
+                <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+                <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
+            </nav>
+        </div>
+
+        <!-- Date + location -->
+        <p class="text-center font-mono text-[10px] sm:text-xs tracking-widest uppercase px-6 py-4 xl:py-5">
+            Saturday, September 19th, 2026 &middot; Chicago, IL
+        </p>
+
+        <!-- Hero photo (full bleed) -->
+        <div class="w-screen ml-[calc(-50vw+50%)]">
+            <img
+                src="images/hero.jpg"
+                alt="Zach & Ronnie"
+                class="w-full h-[55vh] xl:h-[62vh] object-cover object-center block"
+                loading="eager"
+            >
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

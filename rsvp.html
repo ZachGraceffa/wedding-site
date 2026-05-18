@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP — Zach & Ronnie</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+              'baskerville': ['Libre Baskerville', 'Georgia', 'serif'],
+              'mono': ['Cutive Mono', 'monospace'],
+            },
+            colors: {
+              'cream': '#e8e3d8',
+              'brown': '#3d3531',
+              'red': '#c74545',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-cream text-brown min-h-screen">
+    <nav class="md:hidden flex justify-center gap-8 px-6 pt-6 pb-2 font-mono text-[10px] uppercase tracking-widest">
+        <a href="index.html" class="hover:opacity-50 transition-opacity">Home</a>
+        <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
+        <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
+        <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+        <a href="rsvp.html" class="underline underline-offset-4">RSVP</a>
+    </nav>
+
+    <div class="hidden md:grid grid-cols-[130px_1fr_130px] lg:grid-cols-[160px_1fr_160px] items-start px-10 pt-10 lg:px-16 lg:pt-12">
+        <nav class="flex flex-col gap-4 pt-2 font-mono text-[10px] uppercase tracking-widest">
+            <a href="index.html" class="hover:opacity-50 transition-opacity">Home</a>
+            <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
+            <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
+        </nav>
+        <div class="text-center">
+            <a href="index.html" class="font-baskerville font-bold italic text-brown text-2xl tracking-wide hover:opacity-70 transition-opacity">
+                Zach <span class="text-red">&amp;</span> Ronnie
+            </a>
+        </div>
+        <nav class="flex flex-col gap-4 pt-2 font-mono text-[10px] uppercase tracking-widest text-right">
+            <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+            <a href="rsvp.html" class="underline underline-offset-4">RSVP</a>
+        </nav>
+    </div>
+
+    <main class="flex flex-col items-center justify-center min-h-[60vh] px-6 py-16">
+        <p class="font-mono text-xs uppercase tracking-widest text-center">details coming soon.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

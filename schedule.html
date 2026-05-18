@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule — Zach and Ronnie's Wedding">
+    <title>Schedule — Zach & Ronnie</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+              'baskerville': ['Libre Baskerville', 'Georgia', 'serif'],
+              'mono': ['Cutive Mono', 'monospace'],
+            },
+            colors: {
+              'cream': '#e8e3d8',
+              'brown': '#3d3531',
+              'red': '#c74545',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-cream text-brown">
+
+    <header class="text-center px-6 pt-10 pb-0 md:pt-16">
+        <a href="index.html" class="hover:opacity-75 transition-opacity inline-block">
+            <h1 class="font-baskerville font-bold italic leading-[0.95] tracking-wide text-[8vw] md:text-[2.75rem]">
+                <span class="block">ZACH &amp; RONNIE</span>
+                <span class="block">ARE GETTING MARRIED!</span>
+            </h1>
+        </a>
+        <nav class="flex justify-center gap-8 md:gap-14 mt-6 md:mt-8 font-mono text-[10px] uppercase tracking-widest">
+            <a href="schedule.html" class="underline underline-offset-4">Schedule</a>
+            <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
+            <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
+            <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
+        </nav>
+    </header>
+
+    <main class="max-w-[560px] mx-auto px-6 text-center font-mono pb-20">
+
+        <!-- Divider -->
+        <div class="flex items-center justify-center gap-3 my-10">
+            <div class="h-px w-14 bg-brown/40"></div>
+            <span class="text-red text-[10px]">•♥•</span>
+            <div class="h-px w-14 bg-brown/40"></div>
+        </div>
+
+        <!-- Welcome Party -->
+        <section>
+            <h2 class="font-mono text-xs uppercase tracking-[0.2em] mb-5">Welcome Party</h2>
+            <p class="text-xs leading-relaxed">
+                Friday, September 18th, 2026<br>
+                7:00 PM
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                Chief O'Neill's Beer Garden<br>
+                3471 N Elston Ave<br>
+                Chicago, IL 60618
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                Come by for some appetizers and drinks on Friday, and help us kick off our celebration! We would love to say hello before the Saturday festivities.
+            </p>
+        </section>
+
+        <!-- Divider -->
+        <div class="flex items-center justify-center gap-3 my-10">
+            <div class="h-px w-14 bg-brown/40"></div>
+            <span class="text-red text-[10px]">•♥•</span>
+            <div class="h-px w-14 bg-brown/40"></div>
+        </div>
+
+        <!-- Wedding Ceremony & Reception -->
+        <section>
+            <h2 class="font-mono text-xs uppercase tracking-[0.2em] mb-5">Wedding Ceremony &amp; Reception</h2>
+            <p class="text-xs leading-relaxed">
+                Saturday, September 19th, 2026<br>
+                4:30 PM
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                Chief O'Neill's Beer Garden<br>
+                3471 N Elston Ave<br>
+                Chicago, IL 60618
+            </p>
+            <p class="text-xs leading-relaxed mt-4">
+                The main event! Dress code: Cocktail / garden party (but truly, wear what feels good to you). The ceremony is outdoors, so choose your shoes wisely!
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
