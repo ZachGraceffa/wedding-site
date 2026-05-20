@@ -35,7 +35,7 @@
 <body class="bg-cream text-brown">
     <main>
         <!-- Mobile/tablet nav — hidden at xl (1280px+) where side nav takes over -->
-        <nav class="xl:hidden flex justify-center gap-8 px-6 pt-6 pb-2 font-mono text-[10px] uppercase tracking-widest">
+        <nav class="xl:hidden flex justify-center gap-8 px-6 pt-6 pb-2 font-mono font-bold text-lg uppercase tracking-widest">
             <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
             <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
             <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
@@ -43,10 +43,10 @@
         </nav>
 
         <!-- Header: single column on mobile/tablet, 3-column at xl+ -->
-        <div class="grid grid-cols-1 xl:grid-cols-[130px_1fr_130px] items-start px-6 pt-4 pb-0 xl:px-16 xl:pt-12">
+        <div class="grid grid-cols-1 xl:grid-cols-[130px_1fr_130px] items-end px-6 pt-4 pb-0 xl:px-16 xl:pt-12">
 
             <!-- Left nav (xl+ only) -->
-            <nav class="hidden xl:flex flex-col gap-4 pt-6 font-mono text-[10px] uppercase tracking-widest">
+            <nav class="hidden xl:flex flex-col gap-4 font-mono font-bold text-lg uppercase tracking-widest">
                 <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
                 <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
             </nav>
@@ -61,21 +61,32 @@
             </div>
 
             <!-- Right nav (xl+ only) -->
-            <nav class="hidden xl:flex flex-col gap-4 pt-6 font-mono text-[10px] uppercase tracking-widest text-right">
+            <nav class="hidden xl:flex flex-col gap-4 font-mono font-bold text-lg uppercase tracking-widest text-right">
                 <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
                 <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
             </nav>
         </div>
 
         <!-- Date + location -->
-        <p class="text-center font-mono text-[10px] sm:text-xs tracking-widest uppercase px-6 py-4 xl:py-5">
+        <p class="text-center font-mono font-bold text-lg tracking-widest uppercase px-6 py-4 xl:py-5">
             Saturday, September 19th, 2026 &middot; Chicago, IL
         </p>
 
         <!-- Hero photo (full bleed) -->
         <div class="w-screen ml-[calc(-50vw+50%)]">
             <img
-                src="images/hero.jpg"
+                src="images/hero-1280.webp"
+                srcset="
+                    images/hero-320.webp 320w,
+                    images/hero-480.webp 480w,
+                    images/hero-640.webp 640w,
+                    images/hero-768.webp 768w,
+                    images/hero-1024.webp 1024w,
+                    images/hero-1280.webp 1280w,
+                    images/hero-1536.webp 1536w,
+                    images/hero-1920.webp 1920w
+                "
+                sizes="100vw"
                 alt="Zach & Ronnie"
                 class="w-full h-[55vh] xl:h-[62vh] object-cover object-center block"
                 loading="eager"
