@@ -8,7 +8,7 @@ Static multi-page wedding website for Zach & Ronnie's wedding, September 19th, 2
 
 ## Pages
 
-- `index.html` — hero landing page with unique 3-column xl layout (side navs flank the title)
+- `index.html` — hero landing page with centered title and top nav (same nav pattern as inner pages)
 - `schedule.html`, `travel.html`, `faq.html`, `rsvp.html` — inner pages sharing a common header/nav pattern
 
 ## Styling
@@ -23,8 +23,7 @@ The Tailwind config is duplicated in every HTML `<script>` block. When changing 
 
 ## Responsive layout
 
-- Mobile/tablet: single-column, top nav bar
-- `xl` (1280px+): 3-column grid on index with side navs; inner pages stay centered single-column
+- Mobile and up: single-column, top nav bar on all pages
 - Breakpoints used: `md:`, `xl:` — no `sm:` or `lg:` usage
 
 ## Images

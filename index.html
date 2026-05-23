@@ -34,24 +34,16 @@
 </head>
 <body class="bg-cream text-brown">
     <main>
-        <!-- Mobile/tablet nav — hidden at xl (1280px+) where side nav takes over -->
-        <nav class="xl:hidden flex justify-center gap-6 px-6 pt-6 pb-2 font-mono font-bold text-sm uppercase tracking-widest">
+        <!-- Nav — all widths -->
+        <nav class="flex justify-center gap-6 px-6 pt-6 pb-2 font-mono font-bold text-sm uppercase tracking-widest">
             <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
             <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
             <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
             <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
         </nav>
 
-        <!-- Header: single column on mobile/tablet, 3-column at xl+ -->
-        <div class="grid grid-cols-1 xl:grid-cols-[130px_1fr_130px] items-end px-6 pt-4 pb-0 xl:px-16 xl:pt-12">
-
-            <!-- Left nav (xl+ only) -->
-            <nav class="hidden xl:flex flex-col gap-4 font-mono font-bold text-xs uppercase tracking-widest">
-                <a href="schedule.html" class="hover:opacity-50 transition-opacity">Schedule</a>
-                <a href="travel.html" class="hover:opacity-50 transition-opacity">Travel</a>
-            </nav>
-
-            <!-- Title — each line forced to its own block for reliable wrapping control -->
+        <!-- Header -->
+        <div class="px-6 pt-4 pb-0 xl:px-16 xl:pt-12">
             <div class="text-center">
                 <h1 class="font-baskerville font-bold italic text-brown leading-[0.9] tracking-wide text-[9vw] md:text-[6vw] xl:text-[5vw]">
                     <span class="block">ZACH &amp; RONNIE</span>
@@ -59,21 +51,15 @@
                     <span class="block">MARRIED!</span>
                 </h1>
             </div>
-
-            <!-- Right nav (xl+ only) -->
-            <nav class="hidden xl:flex flex-col gap-4 font-mono font-bold text-xs uppercase tracking-widest text-right">
-                <a href="faq.html" class="hover:opacity-50 transition-opacity">FAQ</a>
-                <a href="rsvp.html" class="hover:opacity-50 transition-opacity">RSVP</a>
-            </nav>
         </div>
 
         <!-- Date + location -->
-        <p class="text-center font-mono font-bold text-sm tracking-widest uppercase px-6 py-3 xl:py-4">
+        <p class="text-center font-mono font-bold text-base tracking-widest uppercase px-6 py-3 xl:py-4">
             Saturday, September 19th, 2026 &middot; Chicago, IL
         </p>
 
         <!-- Hero photo (full bleed) -->
-        <div class="w-screen ml-[calc(-50vw+50%)]">
+        <div class="w-screen ml-[calc(-50vw+50%)] mt-6">
             <img
                 src="images/hero-1280.webp"
                 srcset="
@@ -88,9 +74,14 @@
                 "
                 sizes="100vw"
                 alt="Zach & Ronnie"
-                class="w-full h-[55vh] xl:h-[62vh] object-cover object-center block"
+                class="w-full h-auto block"
                 loading="eager"
             >
+        </div>
+
+        <!-- Heart divider -->
+        <div class="flex justify-center py-6">
+            <img src="images/heart-divider.png" alt="" class="w-48 h-auto" style="mix-blend-mode: multiply;">
         </div>
     </main>
     <script src="script.js"></script>
