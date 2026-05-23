@@ -5,3 +5,4 @@ output.css
 screenshot*.png
 screenshot.mjs
 resize.py
+.playwright-mcp
