@@ -18,7 +18,7 @@ Static multi-page wedding website for Zach & Ronnie's wedding, September 19th, 2
 The Tailwind config is duplicated in every HTML `<script>` block. When changing design tokens, update all files.
 
 **Design tokens:**
-- Colors: `bg-cream` (`#e8e3d8`), `text-brown` (`#3d3531`), `text-red` (`#c74545`)
+- Colors: `bg-cream` (`#e8e3d8`), `text-brown` (`#3d3531`), `text-red` (`#8f343b`)
 - Fonts: `font-baskerville` (Libre Baskerville, serif headings), `font-cormorant` (Cormorant Garamond, display), `font-mono` (Cutive Mono, nav/labels)
 
 ## Responsive layout
