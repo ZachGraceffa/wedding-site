@@ -30,9 +30,13 @@
     </script>
     <style>
       html, body { overflow-x: hidden; }
+      a:focus-visible { outline: 2px solid #3d3531; outline-offset: 3px; border-radius: 2px; }
+      .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+      .skip-link:focus { position: fixed; top: 1rem; left: 50%; transform: translateX(-50%); width: auto; height: auto; padding: 0.5rem 1.25rem; background: #3d3531; color: #e8e3d8; font-family: monospace; font-size: 0.875rem; text-decoration: none; z-index: 9999; outline: none; border-radius: 2px; }
     </style>
 </head>
 <body class="bg-cream text-brown">
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
     <header class="text-center px-6 pt-10 pb-0 md:pt-16">
         <a href="index.html" class="hover:opacity-75 transition-opacity inline-block">
@@ -41,16 +45,17 @@
                 <span class="block">ARE GETTING MARRIED!</span>
             </h1>
         </a>
-        <nav class="flex justify-center gap-6 md:gap-10 mt-5 md:mt-6 font-mono font-bold text-sm uppercase tracking-widest">
+        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-10 mt-5 md:mt-6 font-mono font-bold text-sm uppercase tracking-wider md:tracking-widest">
             <a href="index.html" class="underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">Home</a>
-            <a href="schedule.html" class="underline decoration-dotted underline-offset-4">Schedule</a>
+            <a href="schedule.html" aria-current="page" class="underline underline-offset-4">Schedule</a>
             <a href="travel.html" class="underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">Travel</a>
             <a href="faq.html" class="underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">FAQ</a>
-            <a href="rsvp.html" class="underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">RSVP</a>
+            <a href="https://withjoy.com/veronica-and-zach-sep-2026/rsvp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">RSVP<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"/><path d="M8 1h3v3"/><path d="M11 1 5.5 6.5"/></svg><span class="sr-only"> (opens in new tab)</span></a>
+            <a href="https://www.zola.com/registry/zacharyandveronica2026" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 underline decoration-dotted underline-offset-4 hover:opacity-50 transition-opacity">Registry<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"/><path d="M8 1h3v3"/><path d="M11 1 5.5 6.5"/></svg><span class="sr-only"> (opens in new tab)</span></a>
         </nav>
     </header>
 
-    <main class="max-w-[560px] mx-auto px-6 text-center font-mono font-bold pb-20">
+    <main id="main-content" class="max-w-[560px] mx-auto px-6 text-center font-mono font-bold pb-20">
 
         <!-- Divider -->
         <div class="flex justify-center my-10">
@@ -59,7 +64,7 @@
 
         <!-- Welcome Party -->
         <section>
-            <h2 class="font-mono text-lg uppercase tracking-[0.2em] mb-5">Welcome Party</h2>
+            <h2 class="font-mono text-2xl uppercase tracking-[0.2em] mb-5">Welcome Party</h2>
             <p class="text-lg leading-relaxed">
                 Friday, September 18th, 2026<br>
                 7:00 PM
@@ -72,6 +77,9 @@
             <p class="text-lg leading-relaxed mt-4">
                 Help us kick off our celebration on Friday with a cruise down the Chicago River. We would love to enjoy some drinks and appetizers with you before the Saturday festivities.
             </p>
+            <p class="text-lg leading-relaxed mt-4">
+                Keep an eye out for additional details and RSVP information coming your way soon.
+            </p>
         </section>
 
         <!-- Divider -->
@@ -81,7 +89,7 @@
 
         <!-- Wedding Ceremony & Reception -->
         <section>
-            <h2 class="font-mono text-lg uppercase tracking-[0.2em] mb-5">Wedding Ceremony &amp; Reception</h2>
+            <h2 class="font-mono text-2xl uppercase tracking-[0.2em] mb-5">Wedding Ceremony &amp; Reception</h2>
             <p class="text-lg leading-relaxed">
                 Saturday, September 19th, 2026<br>
                 4:30 PM
